@@ -1,0 +1,16 @@
+    PROCEDURE insetion-sort(tab : ARRAY_OF INTEGER)
+    VAR
+        i,j,a : INTEGER
+    BEGIN
+        FOR i FROM 1 TO tab.length-1  DO
+            a = tab[i];
+            j=i;
+        
+        WHILE ((j>0) AND (tab[j-1]> a))  DO
+            stab[j]=tab[j-1]
+            j=j-1
+        END_WHILE
+        tab[j]=a
+    END
+       END_FOR
+END
